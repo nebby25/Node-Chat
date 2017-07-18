@@ -8,7 +8,7 @@ describe('generateMessage', ()=>{
         var from = 'Ben';
         var text = 'I am going to get you!';
         var res = generateMessage(from, text);
-        expect(res.createAt).toBeA('number');
+        expect(res.createdAt).toBeA('number');
         expect(res).toInclude({
             from,
             text
